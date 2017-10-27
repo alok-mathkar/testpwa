@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gold Loan</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="manifest" href="manifest.json">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="PWAGram">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-57x57.png" sizes="57x57">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-60x60.png" sizes="60x60">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-76x76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-114x114.png" sizes="114x114">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-152x152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="/src/images/icons/apple-icon-180x180.png" sizes="180x180">
+	<meta name="msapplication-TileImage" content="/src/images/icons/app-icon-144x144.png">
+	<meta name="msapplication-TileColor" content="#fff">
+	<meta name="theme-color" content="#ccc">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+		</div>
+	</header>
+	<section>
+		<div class="wrapper">
+			<div class="pageTitle"><h1>Gold Loan Calculator</h1></div>			
+			<div class="content">
+				<div class="div-row">
+					<label>Tenure <span>(Months)</span></label>
+					<div class="customSelect sel-big">
+						<div class="selText">Select</div>
+						<select class="tenure">
+							<option>Select</option>
+							<option>6</option>
+							<option>12</option>
+							<option>24</option>
+							<option>36</option>
+							<option>48</option>
+						</select>
+					</div>
+					<span class="claender-icon">
+						<img src="images/calender-icon.jpg" alt="calender icon">
+					</span>
+				</div>
+				<div class="formSection">
+					<div class="form-rowHead">
+						<div class="form-row">
+							<div class="row-coloumn">Carat</div>
+							<div class="row-coloumn">Weight (grms)</div>
+							<div class="row-coloumn">Loan Amount</div>
+						</div>
+					</div>
+					<div class="form-rowBody">
+						<div class="form-row">
+							<div class="row-coloumn">
+								<div class="customSelect sel-full">
+									<div class="selText caratVal"></div>
+									<select class="carat">
+										<option> </option>
+									</select>
+								</div>
+							</div>
+							<div class="row-coloumn">
+								<div class="inputWrap">
+									<input class="weight" type="text" name="">
+								</div>
+							</div>
+							<div class="row-coloumn">
+								<div class="inputWrap">
+									<input readonly class="finalLoan" type="text" name="">
+								</div>
+							</div>
+						</div>
+						<a class="addmore" href="javascript:;">Add more</a>
+					</div>
+					
+				</div>
+				<div class="graphs">
+					<h2>Breakup Of Ornament Values</h2>
+					<div id="graphsContainer"></div>
+					<a href="javascript:;" class="applyloan">Apply for Gold Loan</a>
+					<div class="ornaments-ledgend">
+						<ul>
+							<li><span class="color1"></span>Ornament 1</li>
+							<li><span class="color2"></span>Ornament 2</li>
+							<li><span class="color3"></span>Ornament 3</li>
+							<li><span class="color4"></span>Ornament 4</li>
+							<li><span class="color5"></span>Ornament 5</li>
+							<li><span class="color6"></span>Ornament 6</li>
+							<li><span class="color7"></span>Ornament 7</li>
+							<li><span class="color8"></span>Ornament 8</li>
+							<li><span class="color9"></span>Ornament 9</li>
+							<li><span class="color10"></span>Ornament 10</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
